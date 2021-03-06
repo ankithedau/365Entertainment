@@ -1,0 +1,351 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    margin: 0;
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: 1fr auto;
+    background-color: black !important;
+}
+.menu-bar {
+    color: #fff;
+    background: linear-gradient(45deg, #b59951, #d5d088, #d2dfac, #d1eccb);
+    background-size: 400% 400%;
+    position: relative;
+    animation: change 10s ease-in-out infinite;
+    height: 5rem;
+    z-index: 1000;
+}
+.nav-link {
+    font-family: "Montserrat", sans-serif;
+    font-size: 17px;
+    margin: 10px;
+    color: black !important;
+    font-weight: bold;
+    text-align: right;
+}
+.menu-bar .navbar-toggler {
+    padding-right: 20px;
+    outline: none !important;
+    border: none !important;
+}
+.nav-link:hover {
+    opacity: 0.5;
+}
+@keyframes change {
+    0% {
+        background-position: 0 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0 50%;
+    }
+}
+.navbar-brand {
+    font-size: 2.5rem;
+    border-radius: 3px;
+    background-image: linear-gradient(to right, #b78a49, #f7eea1);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    color: black;
+    font-family: "Montserrat", sans-serif;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.carousel-item {
+    height: 50rem;
+    background: black;
+    color: honeydew;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+}
+.overlay-image {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.5;
+}
+.media-carousel-container {
+    margin: 10px 40px 40px 40px;
+    box-sizing: border-box;
+}
+.media-holder-action {
+    clear: both;
+    box-sizing: border-box;
+}
+.popular-heading {
+    border-bottom: 1px solid white;
+    margin-top: 50px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+h2 {
+    color: rgb(255, 255, 255);
+    display: block;
+    font-size: 2rem;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+.image-container-action {
+    height: 250px;
+    box-sizing: border-box;
+}
+.media-carousel {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin: 10px 5px;
+    float: left;
+}
+.overlay {
+    position: absolute;
+    bottom: 0;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    text-align: center;
+    margin: 0;
+}
+.b {
+    font-weight: bold;
+}
+.media-holder-drama {
+    clear: both;
+    box-sizing: border-box;
+}
+.image-container-drama {
+    height: 250px;
+    box-sizing: border-box;
+}
+.media-holder-scifi {
+    clear: both;
+    box-sizing: border-box;
+}
+.image-container-scifi {
+    height: 250px;
+    box-sizing: border-box;
+}
+.text {
+    margin-top: 25px;
+    color: rgb(63, 63, 63);
+}
+
+.dropdown .dropbtn {
+    cursor: pointer;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    padding: 5px 42px;
+    width: 160px;
+    height: 38px;
+    background-color: gold;
+    font-weight: bolder;
+    text-align: left;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+        Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    border-radius: 4px;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1 !important;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+        Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    border-radius: 2px;
+    font-weight: bolder;
+    font-size: 14px;
+}
+.dropdown-content a:hover {
+    background-color: gold;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.fa {
+    float: right;
+}
+/* form {
+    float: right;
+    display: block;
+    margin-top: -2em;
+    margin-block-end: 1em;
+} */
+/* input.input-medium.search-query {
+    margin-top: -44px;
+    height: 38px;
+    margin-right: 55px;
+    border-radius: 4px;
+    border-style: double;
+    width: 1250px;
+    position: relative;
+    background-color: gold;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+        Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    text-align: center;
+    padding: 1px 2px;
+} */
+input {
+    text-rendering: auto;
+    color: -internal-light-dark(black, white);
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    appearance: textfield;
+    background-color: -internal-light-dark(rgb(255, 255, 255), rgb(59, 59, 59));
+    -webkit-rtl-ordering: logical;
+    cursor: text;
+    margin: 0em;
+    font: 400 13.3333px Arial;
+    padding: 1px 2px;
+    border-width: 2px;
+    border-style: inset;
+    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(195, 195, 195));
+    border-image: initial;
+}
+/* .flex-container .search-container form {
+    float: right;
+    padding: 6px 10px;
+    margin-right: 25px;
+    background: gold;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    right: 38px;
+    margin-left: 0px;
+    margin-top: -40px;
+    position: absolute;
+    height: 38px;
+} */
+#media-carousel-container {
+    margin: 10px 40px 40px 40px;
+}
+#media-holder-action,
+#media-holder-drama,
+#media-holder-scifi {
+    clear: both;
+}
+#image-container-action,
+#image-container-drama,
+#image-container-scifi {
+    height: 250px;
+}
+.media-carousel,
+.media-carousel-movies {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin: 10px 5px;
+    float: left;
+    margin: 30px 23px 22px 14px;
+}
+.overlay {
+    position: absolute;
+    bottom: 0;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    text-align: center;
+}
+.media-carousel,
+.media-carousel-movies {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin: 10px 5px;
+    float: left;
+}
+#media-holder-action,
+#media-holder-drama,
+#media-holder-scifi {
+    clear: both;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-container .search-container {
+    width: 100%;
+    padding: 30px 100px 45px 45px;
+}
+
+.flex-container .search-container form {
+    width: 100% !important;
+}
+.search-query {
+    border: rgb(24, 23, 21);
+
+    border-radius: 4px;
+
+    border-style: double;
+    height: 40px;
+    position: relative;
+    background-color: gold;
+    margin-right: 55px;
+    width: 100%;
+    text-align: center;
+}
+.dropdown {
+    padding-left: 45px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.search-container-button button {
+    float: right;
+    padding: 6px 10px;
+    margin-right: 25px;
+    background: gold;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    right: 80px;
+    margin-left: 0px;
+    margin-top: -37px;
+    margin-bottom: 0px;
+    position: absolute;
+    font-weight: bolder;
+}
+.footer-bar {
+    color: #fff;
+    background: linear-gradient(45deg, #b59951, #d5d088, #d2dfac, #d1eccb);
+    background-size: 400% 400%;
+    position: relative;
+    animation: change 10s ease-in-out infinite;
+    padding-right: 20px;
+    outline: none !important;
+    border: none !important;
+    height: 5rem;
+}
